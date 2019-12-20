@@ -43,6 +43,13 @@ body{
 .relative:hover h3{
 	display: flex;
 }
+.bg-img{
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 320px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+}
 @media only screen and (max-width: 991px) {
   .col-4 {
     flex: 0 0 50%;
