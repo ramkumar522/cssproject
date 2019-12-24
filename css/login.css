@@ -1,22 +1,32 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 body{
 	background: #eee;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
-	overflow: hidden;
 }
 .login-section{
-	display: flex;
-	height: 100vh;
+	width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #ddd;
 }
 .login-box{
-	display: block;
-    background: #fff;
-    padding: 20px;
+	background: #fff;
+    border-radius: .25rem;
+    padding: 30px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.3);
+    display: block;
     max-width: 350px;
-    align-self: center;
-    justify-content: center;
 }
 label{
 	display: block;
@@ -26,10 +36,12 @@ label{
 	margin-bottom: 16px;
 }
 .form-control{
-	height: 10px;
-	padding: .75rem 1rem;
-	width: 100%;
-	display: block;
+	height: 34px;
+    padding: .75rem 1rem;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 .btn{
 	    background: #2196F3;
@@ -48,6 +60,7 @@ label{
 	display: block;
 	margin-bottom: 1rem;
 	width: 100%;
+	text-align: center;
 }
 .logo img{
 	width: 100%;
